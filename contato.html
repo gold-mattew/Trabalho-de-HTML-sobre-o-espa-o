@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Inscreva-se na comunidade do Portal Espacial e receba boletins sobre astronomia.">
+    <title>Contato e Inscrição | Portal Espacial</title>
+</head>
+<body>
+    <header>
+        <h1>Cadastre-se no Portal Espacial</h1>
+        <p>Junte-se à nossa comunidade de entusiastas da astronomia e receba boletins informativos.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sistemasolar.html">Sistema Solar</a></li>
+            <li><a href="missoes.html">Missões</a></li>
+            <li><a href="contato.html">Contato e Inscrição</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Formulário de Cadastro Completo</h2>
+            <p>Preencha os campos abaixo com suas informações para submeter sua inscrição no clube de ciências:</p>
+
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Credenciais e Informações Pessoais</legend>
+
+                    <div>
+                        <label for="nome">Nome Completo:</label>
+                        <input type="text" id="nome" name="nome" required minlength="3" placeholder="Ex: Maria da Silva">
+                    </div>
+
+                    <div>
+                        <label for="email">Endereço de E-mail:</label>
+                        <input type="email" id="email" name="email" required placeholder="exemplo@dominio.com">
+                    </div>
+
+                    <div>
+                        <label for="senha">Senha de Acesso:</label>
+                        <input type="password" id="senha" name="senha" required minlength="6" placeholder="Mínimo de 6 caracteres">
+                    </div>
+
+                    <div>
+                        <label for="nascimento">Data de Nascimento:</label>
+                        <input type="date" id="nascimento" name="nascimento" required>
+                    </div>
+
+                    <div>
+                        <label for="idade">Idade Atual:</label>
+                        <input type="number" id="idade" name="idade" min="10" max="120" required value="18">
+                    </div>
+
+                    <div>
+                        <label for="cor">Cor Favorita do Cosmos (Tema Visual):</label>
+                        <input type="color" id="cor" name="cor" value="#0b3d91">
+                    </div>
+
+                    <div>
+                        <label for="experiencia">Nível de Interesse em Astronomia (1 a 10):</label>
+                        <input type="range" id="experiencia" name="experiencia" min="1" max="10" value="8">
+                    </div>
+
+                    <div>
+                        <label for="interesse">Área de Maior Interesse:</label>
+                        <select id="interesse" name="interesse" required>
+                            <option value="">Selecione uma opção...</option>
+                            <option value="planetas">Planetas e Sistema Solar</option>
+                            <option value="estrelas">Estrelas, Nebulosas e Buracos Negros</option>
+                            <option value="tecnologia">Engenharia de Foguetes</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="comentarios">Comentários ou Sugestões:</label>
+                        <textarea id="comentarios" name="comentarios" rows="4" cols="40" placeholder="Escreva sua mensagem aqui..."></textarea>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="termos" name="termos" required>
+                        <label for="termos">Aceito os termos e condições do clube de ciências.</label>
+                    </div>
+                </fieldset>
+
+                <button type="submit">Enviar Inscrição</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Portal Espacial. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
